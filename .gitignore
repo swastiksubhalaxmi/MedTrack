@@ -1,0 +1,85 @@
+# ============================================================
+# Root .gitignore for MediStock Platform
+# ============================================================
+
+# ------------------------------------------------------------
+# 1. Frontend: Dependencies & Build Outputs
+# ------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+node_modules/
+dist/
+build/
+.npm/
+
+# ------------------------------------------------------------
+# 2. Frontend: Environment & Secret Files
+# ------------------------------------------------------------
+frontend/.env
+frontend/.env.*
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+**/.env
+**/.env.*
+!**/.env.example
+
+# ------------------------------------------------------------
+# 3. Backend: Build Artifacts
+# ------------------------------------------------------------
+backend/target/
+medistock-backend/target/
+**/target/
+HELP.md
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ------------------------------------------------------------
+# 4. Backend: Application Properties & Secrets
+# ------------------------------------------------------------
+backend/src/main/resources/application.properties
+backend/src/main/resources/application.properties
+**/src/main/resources/application.properties
+!**/src/main/resources/application.properties.example
+!**/src/main/resources/application-example.properties
+
+# ------------------------------------------------------------
+# 5. IDE & Editor Artifacts
+# ------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/nbdist/
+/.nb-gradle/
+
+# ------------------------------------------------------------
+# 6. Operating System & Temporary Files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.log
+logs/
